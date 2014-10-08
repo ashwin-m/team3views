@@ -1,0 +1,44 @@
+<%= link_to "Home", controller: 'welcome' %>
+<%= form_for :cab, url: cabbooking_index_path do |f| %>
+  <p>
+    Customer Name:
+    <%= f.text_field :customername %>
+  </p>
+ 
+  <p>
+    Customer id
+    <%= f.text_field :customerid %>
+  </p>
+
+  <p>
+    Booking ID: 
+    <%= f.text_field :bookingid %>
+  </p>
+ 
+  <p>
+    Source:
+    <%= f.text_field :source %>
+  </p>
+
+  <p>
+    Destination:
+    <%= f.text_field :destination %>
+  </p>
+
+  <p>
+    Pick up Time:
+    <%= f.text_field :pickuptime %>
+  </p>
+
+  <p>  
+    <%= button_tag "Book it!!"%> 
+  </p>
+<% end %>
+<%= button_tag "Create Customer"%> 
+<%= button_tag "Delete Customer"%><br>
+<%= button_tag "Find Customer"%>
+<%= button_tag "Find Booking"%><br>
+<%= button_tag "Book"%>
+<%= button_tag "Update Booking"%><br>
+<%= button_tag "Last Booking"%>
+<%= button_tag "Next Booking"%>      
